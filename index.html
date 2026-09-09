@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zou Farm</title>
+    <meta name="description" content="A new way to invest in agriculture - Zou Farm crowdfunding and agricultural investment landing page">
+    <meta property="og:title" content="Zou Farm">
+    <meta property="og:description" content="A new way to invest in agriculture - Zou Farm crowdfunding and agricultural investment landing page">
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+    <!-- Google Fonts: Plus Jakarta Sans and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Mobile Navigation Backdrop Overlay -->
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+
+    <div class="page-wrapper">
+        <!-- Sticky Navigation Header -->
+        <header id="main-header">
+            <nav class="header__nav w-120" id="navbar">
+                <div class="header__logo">
+                    <a href="#" aria-label="Zou Farm Home">
+                        <img src="assets/img/logo.svg" alt="Zou Farm Logo">
+                    </a>
+                </div>
+
+                <div class="header__nav__content" id="nav-menu">
+                    <div class="nav-close-icon" id="nav-close-btn" aria-label="Close menu">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#opportunities" class="menu__link">Opportunities</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#invest" class="menu__link">Farms</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#calculator" class="menu__link">Calculator</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#how-it-works" class="menu__link">How it works</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#testimonials" class="menu__link">Testimonials</a>
+                        </li>
+                    </ul>
+                    <div class="header__actions">
+                        <button type="button" class="btn btn__signin-nav trigger-signup" id="btn-signin-nav">
+                            <i class="far fa-user"></i> Sign In
+                        </button>
+                        <button type="button" class="btn btn__signup trigger-signup" id="btn-signup-nav">
+                            <i class="fas fa-seedling"></i> Get Started
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hamburger-menu-wrap" id="hamburger-toggle" aria-label="Open navigation menu">
+                    <div class="hamburger-menu">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero w-120" id="hero">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <div class="hero__badge">
+                        <span class="badge-dot"></span>
+                        <span>Direct Farmland Crowdfunding • 100% Land Escrow</span>
+                    </div>
+                    <h1 class="hero__title">A New Way to Invest in Agriculture</h1>
+                    <p class="hero__description">
+                        Zou connects modern investors with vetted farmers, ranchers, and sustainable producers. Earn inflation-hedged harvest yields while powering regenerative agriculture.
+                    </p>
+                    <div class="hero__buttons">
+                        <button type="button" class="btn btn__hero trigger-signup" id="btn-hero-invest">
+                            <i class="fas fa-chart-line"></i> Invest Now
+                        </button>
+                        <a href="#invest" class="btn btn__hero-secondary" id="btn-hero-explore">
+                            <i class="fas fa-compass"></i> Explore Farms
+                        </a>
+                    </div>
+                    <!-- Real Key Statistics Bar -->
+                    <div class="hero__stats" id="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">$48.5M+</span>
+                            <span class="stat-label">Capital Funded</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">14.2%</span>
+                            <span class="stat-label">Avg. Annual APY</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">1,850+</span>
+                            <span class="stat-label">Active Investors</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Insured Harvests</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__img-wrap">
+                    <div class="hero__img-card">
+                        <img src="assets/img/hero.png" alt="Agriculture Farmland Harvest" class="hero__main-img">
+                        <!-- Floating Live Investment Pill -->
+                        <div class="floating-project-card" id="floating-project-badge">
+                            <div class="floating-badge-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="floating-badge-info">
+                                <div class="floating-badge-title">Willow Creek Citrus Orchard</div>
+                                <div class="floating-badge-meta">
+                                    <span class="badge-tag">84% Funded</span>
+                                    <span class="badge-yield">13.2% Target APY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opportunities Section -->
+        <section class="opportunities" id="opportunities">
+            <div class="opportunities__img" aria-hidden="true">
+                <img src="assets/img/leaf.png" alt="" loading="lazy">
+            </div>
+            <div class="opportunities__content w-105">
+                <div class="opportunities__head">
+                    <span class="section-badge">WHY ZOU FARM</span>
+                    <h2 class="opportunities__title">New Opportunities in Agriculture</h2>
+                    <p class="opportunities__description">We are the premier crowdfunding platform enabling private investors to co-own tangible agricultural projects with verified growers.</p>
+                </div>
+                <div class="opportunities__body">
+                    <div class="opportunity" id="opportunity-1">
+                        <div class="opportunity__icon-wrap">
+                            <img src="assets/img/opportunites/opportunity-1.svg" alt="Direct farmer connect" class="opportunity__icon">
+                        </div>
+                        <h3 class="opportunity__title">Connect with our farmers</h3>
+                        <p class="opportunity__description">
+                            Directly communicate with family-run farms and agricultural co-ops. Access soil testing, irrigation infrastructure reports, and seasonal grower updates.
+                        </p>
+                        <div class="opportunity__feature">
+                            <span><i class="fas fa-check-circle"></i> Quarterly grower livestreams</span>
+                            <span><i class="fas fa-check-circle"></i> Full contract transparency</span>
+                        </div>
+                    </div>
+
+                    <div class="opportunity active" id="opportunity-2">
+                        <div class="opportunity__badge-top">Most Popular</div>
+                        <div class="opportunity__icon-wrap">
+                            <img src="assets/img/opportunites/opportunity-2.svg" alt="Grow wealth" class="opportunity__icon">
+                        </div>
+                        <h3 class="opportunity__title">Grow your wealth</h3>
+                        <p class="opportunity__description">
+                            Farmland has historically outperformed traditional equity indices during inflationary periods with lower volatility. Earn steady dividend distributions from crop sales.
+                        </p>
+                        <div class="opportunity__feature">
+                            <span><i class="fas fa-check-circle"></i> 12% - 16% historical returns</span>
+                            <span><i class="fas fa-check-circle"></i> Tangible land-backed security</span>
+                        </div>
+                    </div>
+
+                    <div class="opportunity" id="opportunity-3">
+                        <div class="opportunity__icon-wrap">
+                            <img src="assets/img/opportunites/opportunity-3.svg" alt="Social Impact" class="opportunity__icon">
+                        </div>
+                        <h3 class="opportunity__title">Social Impact Investment</h3>
+                        <p class="opportunity__description">
+                            Back projects that deploy regenerative soil techniques, micro-drip water conservation, and certified organic methods that sequester carbon and secure food supply.
+                        </p>
+                        <div class="opportunity__feature">
+                            <span><i class="fas fa-check-circle"></i> Audited ESG carbon credits</span>
+                            <span><i class="fas fa-check-circle"></i> 40% less water usage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investments Section -->
+        <section class="invest w-105" id="invest">
+            <div class="invest__content">
+                <div class="invest__head">
+                    <span class="section-badge">INVESTMENT VEHICLES</span>
+                    <h2 class="invest__title">Invest on your convenience</h2>
+                    <p class="invest__description">Choose between short-cycle crop cycles or long-term multi-year agricultural trusts tailored to your liquidity preferences.</p>
+                </div>
+                <div class="invest__body">
+                    <!-- Short Term Card -->
+                    <div class="invest__item" id="invest-card-short">
+                        <div class="invest__scrim"></div>
+                        <div class="invest__item__head">
+                            <span class="invest__item__badge">NEW FARM TODAY</span>
+                            <span class="invest__item__term"><i class="far fa-clock"></i> 6 - 18 Months</span>
+                        </div>
+                        <div class="invest__item__body">
+                            <h3 class="invest__item__title">Short terms investment</h3>
+                            <p class="invest__item_description">
+                                Invest in annual harvest cycles such as organic grains, citrus, and seasonal crops with fast liquidity returns.
+                            </p>
+                            <div class="invest__item__metrics">
+                                <div class="metric-pill">
+                                    <span class="metric-pill-val">13.2%</span>
+                                    <span class="metric-pill-lbl">Target APY</span>
+                                </div>
+                                <div class="metric-pill">
+                                    <span class="metric-pill-val">$500</span>
+                                    <span class="metric-pill-lbl">Min. Entry</span>
+                                </div>
+                                <div class="metric-pill">
+                                    <span class="metric-pill-val">Low-Med</span>
+                                    <span class="metric-pill-lbl">Risk Rating</span>
+                                </div>
+                            </div>
+                            <!-- Live Progress Bar -->
+                            <div class="invest__progress-wrap">
+                                <div class="invest__progress-bar">
+                                    <div class="invest__progress-fill" style="width: 84%;"></div>
+                                </div>
+                                <div class="invest__progress-labels">
+                                    <span>$420,000 funded</span>
+                                    <span>84% of $500k goal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invest__item__footer">
+                            <button type="button" class="btn btn__invest trigger-farm-modal" data-farm-type="short" id="btn-browse-short">
+                                Browse Farm <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Long Term Card -->
+                    <div class="invest__item" id="invest-card-long">
+                        <div class="invest__scrim"></div>
+                        <div class="invest__item__head">
+                            <span class="invest__item__badge badge-funded">FULLY FUNDED</span>
+                            <span class="invest__item__term"><i class="far fa-clock"></i> 3 - 7 Years</span>
+                        </div>
+                        <div class="invest__item__body">
+                            <h3 class="invest__item__title">Long terms investment</h3>
+                            <p class="invest__item_description">
+                                Multi-year farmland development programs with compound distributions from regenerative timber, vineyards, and orchards.
+                            </p>
+                            <div class="invest__item__metrics">
+                                <div class="metric-pill">
+                                    <span class="metric-pill-val">15.4%</span>
+                                    <span class="metric-pill-lbl">Target APY</span>
+                                </div>
+                                <div class="metric-pill">
+                                    <span class="metric-pill-val">$2,500</span>
+                                    <span class="metric-pill-lbl">Min. Entry</span>
+                                </div>
+                                <div class="metric-pill">
+                                    <span class="metric-pill-val">Quarterly</span>
+                                    <span class="metric-pill-lbl">Payouts</span>
+                                </div>
+                            </div>
+                            <!-- Live Progress Bar -->
+                            <div class="invest__progress-wrap">
+                                <div class="invest__progress-bar">
+                                    <div class="invest__progress-fill progress-full" style="width: 100%;"></div>
+                                </div>
+                                <div class="invest__progress-labels">
+                                    <span>$1,200,000 funded</span>
+                                    <span>100% Fully Subscribed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invest__item__footer">
+                            <button type="button" class="btn btn__invest trigger-farm-modal" data-farm-type="long" id="btn-browse-long">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Farmland Return Calculator -->
+        <section class="calculator-section w-105" id="calculator">
+            <div class="calculator-card">
+                <div class="calc-header">
+                    <span class="section-badge">INTERACTIVE ESTIMATOR</span>
+                    <h2 class="calc-title">Farmland Return & Impact Calculator</h2>
+                    <p class="calc-subtitle">Estimate your projected harvest distributions and ecological impact based on historical performance.</p>
+                </div>
+
+                <div class="calc-body">
+                    <!-- Left: Controls -->
+                    <div class="calc-controls">
+                        <div class="calc-field-header">
+                            <label for="calc-amount">Investment Amount</label>
+                            <span class="calc-amount-display" id="calc-amount-display">$10,000</span>
+                        </div>
+                        <input type="range" min="1000" max="100000" step="1000" value="10000" class="calc-slider" id="calc-amount">
+
+                        <!-- Quick Presets -->
+                        <div class="calc-presets">
+                            <button type="button" class="calc-preset-btn" data-value="2500">$2,500</button>
+                            <button type="button" class="calc-preset-btn" data-value="5000">$5,000</button>
+                            <button type="button" class="calc-preset-btn active" data-value="10000">$10,000</button>
+                            <button type="button" class="calc-preset-btn" data-value="25000">$25,000</button>
+                            <button type="button" class="calc-preset-btn" data-value="50000">$50,000</button>
+                        </div>
+
+                        <div class="calc-term-wrap">
+                            <span class="term-label">Investment Horizon</span>
+                            <div class="calc-terms">
+                                <button type="button" class="calc-term-btn" data-term="1">1 Year</button>
+                                <button type="button" class="calc-term-btn active" data-term="2">2 Years</button>
+                                <button type="button" class="calc-term-btn" data-term="3">3 Years</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: KPI Output Cards -->
+                    <div class="calc-results">
+                        <div class="calc-result-card primary-result">
+                            <span class="result-label">Projected Total Value</span>
+                            <div class="result-number" id="calc-total-return">$12,950</div>
+                            <span class="result-sub" id="calc-annual-return">+$1,475/yr avg return</span>
+                        </div>
+                        <div class="calc-impact-grid">
+                            <div class="impact-item">
+                                <div class="impact-icon"><i class="fas fa-mountain-sun"></i></div>
+                                <div class="impact-val" id="calc-acres">2.9 Acres</div>
+                                <div class="impact-lbl">Farmland Supported</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon"><i class="fas fa-cloud"></i></div>
+                                <div class="impact-val" id="calc-carbon">17.0 t CO₂</div>
+                                <div class="impact-lbl">Carbon Sequestered</div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn__calc-cta trigger-signup" id="btn-calc-cta">
+                            Start With This Amount <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-is-works w-120" id="how-it-works">
+            <div class="works__content">
+                <div class="works__head">
+                    <span class="section-badge badge-white">STEP-BY-STEP PROCESS</span>
+                    <h2 class="works__title">How it works</h2>
+                    <p class="works__description">
+                        Take your pick from the agricultural supply chain and participate in vetted agribusiness projects backed by real land, multi-generational farming expertise, and crop insurance.
+                    </p>
+                </div>
+                <div class="works__body">
+                    <ul class="form_progressbar" id="progressbar-list">
+                        <li class="progressbar__step active current" data-step="1" tabindex="0" role="button" aria-label="Step 1: Select Farmshare">01</li>
+                        <li class="progressbar__step" data-step="2" tabindex="0" role="button" aria-label="Step 2: Review Escrow & Terms">02</li>
+                        <li class="progressbar__step" data-step="3" tabindex="0" role="button" aria-label="Step 3: Track Real-Time Growth">03</li>
+                        <li class="progressbar__step" data-step="4" tabindex="0" role="button" aria-label="Step 4: Receive Harvest Returns">04</li>
+                    </ul>
+                </div>
+                <div class="works__footer">
+                    <div class="works__step__content first_step active-content" id="step-content-1">
+                        <div class="step-badge">Phase 1</div>
+                        <h3 class="works__step_title">Select your farmshare & complete reservation.</h3>
+                        <p class="works__step_description">
+                            Browse audited soil test records, farmer track records, crop varieties, and legal prospectuses. Allocate capital starting from as low as $500 per share.
+                        </p>
+                    </div>
+                    <div class="works__step__content" id="step-content-2">
+                        <div class="step-badge">Phase 2</div>
+                        <h3 class="works__step_title">Insured escrow & contract execution.</h3>
+                        <p class="works__step_description">
+                            Your investment funds are secured in regulated, custodial escrow accounts. Capital is deployed only when planting benchmarks, water permits, and crop reinsurance are verified.
+                        </p>
+                    </div>
+                    <div class="works__step__content" id="step-content-3">
+                        <div class="step-badge">Phase 3</div>
+                        <h3 class="works__step_title">Track growth with satellite & drone imagery.</h3>
+                        <p class="works__step_description">
+                            Receive quarterly NDVI satellite biomass scans, drone surveys, and regular audio/video dispatches from your assigned farm managers straight to your investor portal.
+                        </p>
+                    </div>
+                    <div class="works__step__content" id="step-content-4">
+                        <div class="step-badge">Phase 4</div>
+                        <h3 class="works__step_title">Harvest distribution & profit payout.</h3>
+                        <p class="works__step_description">
+                            Upon harvest completion and wholesale delivery to certified food distributors, revenue is calculated, and your net yield is deposited directly into your linked bank account.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials__content">
+                <div class="testimonials__head w-105">
+                    <img src="assets/img/quote.svg" alt="Quote Icon" class="testimonials__quote" aria-hidden="true">
+                    <span class="section-badge">INVESTOR EXPERIENCES</span>
+                    <h2 class="testimonials__title">What investors like you are saying about Zou</h2>
+                </div>
+                <div class="testimonials__body">
+                    <div class="testimonials__list" id="testimonials-track">
+                        <!-- Card 1 -->
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="verified-tag"><i class="fas fa-shield-alt"></i> Verified Investor</span>
+                            </div>
+                            <p class="testimonial__description">
+                                “Investing in Zou allowed me to diversify beyond public stocks into real, tangible agricultural assets. The quarterly satellite crop reports and automated harvest dividends have exceeded my expectations.”
+                            </p>
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/1.png" alt="Fernando Soler">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name">Fernando Soler</h4>
+                                    <p class="testimonial__title">Telecommunications Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="verified-tag"><i class="fas fa-shield-alt"></i> Verified Investor</span>
+                            </div>
+                            <p class="testimonial__description">
+                                “Zou bridges the gap between urban retail investors and regenerative farmers. The transparency of the escrow contracts and soil health metrics is second to none in the alternative investment space.”
+                            </p>
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/2.png" alt="Ilone Pickford">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name">Ilone Pickford</h4>
+                                    <p class="testimonial__title">Head of Agrofund Groups</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="verified-tag"><i class="fas fa-shield-alt"></i> Verified Investor</span>
+                            </div>
+                            <p class="testimonial__description">
+                                “As a tech professional looking for inflation resilience, Zou was a game changer. Seeing my capital fund drip irrigation while producing a 14% net annual yield provides unmatched peace of mind.”
+                            </p>
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/3.png" alt="John Doe">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name">Marcus Vance</h4>
+                                    <p class="testimonial__title">Senior Software Architect</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="verified-tag"><i class="fas fa-shield-alt"></i> Verified Investor</span>
+                            </div>
+                            <p class="testimonial__description">
+                                “The ability to review detailed prospectus PDFs, water rights, and soil carbon assessments gave our family trust total confidence. Zou sets the standard for modern farmland co-investment.”
+                            </p>
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/2.png" alt="Elena Chen">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name">Elena Chen</h4>
+                                    <p class="testimonial__title">Private Wealth Portfolio Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials__footer w-105">
+                    <div class="testimonials__directions">
+                        <button type="button" class="btn__testimonials btn__testimonials__prev disable" id="btn-testimonials-prev" aria-label="Previous testimonial">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button type="button" class="btn__testimonials btn__testimonials__next" id="btn-testimonials-next" aria-label="Next testimonial">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Farm Invest Call to Action Banner -->
+        <section class="farm-invest w-105" id="cta-banner">
+            <div class="farm-invest__inner">
+                <span class="section-badge badge-white">SECURE YOUR FARMSHARE</span>
+                <h2 class="farm-invest__title">The future of <span>Farm Investing</span> is Zou</h2>
+                <p class="farm-invest__subtitle">Join over 1,850+ forward-thinking investors financing food security and earning inflation-beating yields.</p>
+                
+                <div class="farm-invest__actions">
+                    <button type="button" class="btn btn__farm--invest trigger-signup" id="btn-cta-invest">
+                        <i class="fas fa-arrow-trend-up"></i> Start Investing Today
+                    </button>
+                </div>
+
+                <!-- Trust Guarantees -->
+                <div class="farm-invest__guarantees">
+                    <span><i class="fas fa-lock"></i> Bank-Grade 256-Bit Escrow</span>
+                    <span><i class="fas fa-shield-halved"></i> 100% Crop Reinsurance</span>
+                    <span><i class="fas fa-file-contract"></i> SEC & FCA Regulated Structure</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="footer__body w-105">
+                <nav class="footer__nav" aria-label="Footer Navigation">
+                    <ul class="footer_nav__menu">
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title">COMPANY</h4>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#hero" class="footer_nav__link">About Us</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#how-it-works" class="footer_nav__link">Our Mission</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#testimonials" class="footer_nav__link">Growers Network</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="mailto:info@zoufarm.com" class="footer_nav__link">Careers (Hiring)</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="mailto:info@zoufarm.com" class="footer_nav__link">Contact Team</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer_nav__menu">
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title">INVEST</h4>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#invest" class="footer_nav__link">Active Farms</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#calculator" class="footer_nav__link">Yield Calculator</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#how-it-works" class="footer_nav__link">How it works</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#invest" class="footer_nav__link">Short Term Cycles</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <button type="button" class="footer_nav__link trigger-signup" style="background:none;border:none;cursor:pointer;padding:0;">Investor Login</button>
+                        </li>
+                    </ul>
+
+                    <ul class="footer_nav__menu">
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title">LEGAL & SAFETY</h4>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Terms of Service</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Escrow & Custody</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Risk Disclosure</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Whistleblower Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__contact">
+                    <h5 class="footer__contact__title">Stay Connected</h5>
+                    <p class="footer__contact__desc">Receive weekly alerts for newly listed farm allotments and quarterly harvest reports.</p>
+                    <form class="quick-newsletter-form" id="footer-newsletter-form">
+                        <div class="newsletter-input-wrap">
+                            <input type="email" placeholder="Your email address" required aria-label="Your email address">
+                            <button type="submit" aria-label="Subscribe to newsletter"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                    <div class="footer__direct-contact">
+                        <span>Direct inquiries:</span>
+                        <a href="mailto:info@zoufarm.com" class="email">info@zoufarm.com</a>
+                    </div>
+                    <button type="button" class="btn btn__signin trigger-signup" id="btn-footer-signin">
+                        <i class="far fa-user"></i> Investor Portal
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom__content w-105">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.svg" alt="Zou Farm Logo">
+                    </div>
+                    <p class="footer_copyright">
+                        © Copyright 2026 Zou Capital Pty Ltd (ABN 45 4545 87363). Farmland investment involves risks. Past performance does not guarantee future results.
+                    </p>
+                    <div class="footer__socials">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <img src="assets/img/mountain.png" alt="Mountain Landscape Silhouette" class="footer_img" aria-hidden="true" loading="lazy">
+            </div>
+        </footer>
+    </div>
+
+    <!-- ================= MODALS & TOASTS ================= -->
+
+    <!-- Investor Sign Up / Sign In Modal -->
+    <div class="modal-backdrop" id="signup-modal" role="dialog" aria-modal="true" aria-labelledby="signup-modal-title">
+        <div class="modal-card">
+            <button type="button" class="modal-close" aria-label="Close dialog"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-badge"><i class="fas fa-seedling"></i> Zou Farm Access</div>
+                <h3 id="signup-modal-title">Join Zou Agricultural Network</h3>
+                <p class="modal-desc">Start investing in certified farmland or list your agricultural property for community funding.</p>
+            </div>
+
+            <!-- Role Selector Tabs -->
+            <div class="role-tabs">
+                <button type="button" class="role-tab-btn active" data-role="investor"><i class="fas fa-wallet"></i> I am an Investor</button>
+                <button type="button" class="role-tab-btn" data-role="producer"><i class="fas fa-tractor"></i> I am a Farmer</button>
+            </div>
+
+            <form class="modal-form" id="signup-form">
+                <input type="hidden" id="selected-role" value="investor">
+                <div class="form-group">
+                    <label for="modal-name">Full Name</label>
+                    <input type="text" id="modal-name" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email Address</label>
+                    <input type="email" id="modal-email" placeholder="name@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-investment-tier">Intended Investment Allocation</label>
+                    <select id="modal-investment-tier">
+                        <option value="500-2500">$500 – $2,500 (Starter)</option>
+                        <option value="2500-10000" selected>$2,500 – $10,000 (Individual)</option>
+                        <option value="10000-50000">$10,000 – $50,000 (Accredited)</option>
+                        <option value="50000+">$50,000+ (Institutional/Trust)</option>
+                    </select>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="modal-agree" required checked>
+                    <label for="modal-agree">I agree to the <a href="#">Terms of Escrow</a> and receive prospectus disclosures.</label>
+                </div>
+                <button type="submit" class="btn btn__modal-submit">
+                    Create Investor Account <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Farm Project Details Modal -->
+    <div class="modal-backdrop" id="farm-modal" role="dialog" aria-modal="true" aria-labelledby="farm-modal-title">
+        <div class="modal-card modal-card-lg">
+            <button type="button" class="modal-close" aria-label="Close dialog"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-badge"><i class="fas fa-map-marker-alt"></i> Farmland Prospectus</div>
+                <h3 id="farm-modal-title">Sunlit Valley Organic Citrus & Avocado Farm</h3>
+                <p class="modal-desc" id="farm-modal-desc">High-yield commercial citrus and Hass avocado plantation utilizing precision micro-irrigation and certified organic practices.</p>
+            </div>
+
+            <div class="farm-details-grid">
+                <div class="farm-stat-card">
+                    <span class="f-stat-lbl">Target APY</span>
+                    <span class="f-stat-val text-green" id="farm-modal-yield">13.2% Projected</span>
+                </div>
+                <div class="farm-stat-card">
+                    <span class="f-stat-lbl">Harvest Horizon</span>
+                    <span class="f-stat-val" id="farm-modal-term">6 - 18 Months</span>
+                </div>
+                <div class="farm-stat-card">
+                    <span class="f-stat-lbl">Location</span>
+                    <span class="f-stat-val" id="farm-modal-location">Riverina Basin, NSW</span>
+                </div>
+                <div class="farm-stat-card">
+                    <span class="f-stat-lbl">Min. Allocation</span>
+                    <span class="f-stat-val" id="farm-modal-min">$500 AUD</span>
+                </div>
+            </div>
+
+            <div class="farm-funding-section">
+                <div class="funding-labels">
+                    <span>Funding Progress</span>
+                    <span id="farm-modal-progress-text">$420,000 / $500,000 (84% Funded)</span>
+                </div>
+                <div class="invest__progress-bar">
+                    <div class="invest__progress-fill" id="farm-modal-progress" style="width: 84%;"></div>
+                </div>
+            </div>
+
+            <div class="farm-highlights">
+                <h4><i class="fas fa-shield-alt text-green"></i> Key Security Features:</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> First-lien deed security registered on farmland acreage.</li>
+                    <li><i class="fas fa-check"></i> Multi-peril government crop insurance policy active.</li>
+                    <li><i class="fas fa-check"></i> Contracted purchase agreements with national wholesale distributors.</li>
+                </ul>
+            </div>
+
+            <div class="farm-modal-actions">
+                <button type="button" class="btn btn__modal-submit" id="farm-modal-invest-btn">
+                    Reserve Farmland Allotment <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+        <div class="toast-icon"><i class="fas fa-circle-check"></i></div>
+        <div class="toast-text" id="toast-message">Action completed successfully.</div>
+    </div>
+
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+
+</html>

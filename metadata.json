@@ -1,0 +1,8 @@
+{
+  "name": "Zou Farm",
+  "description": "A new way to invest in agriculture - Zou Farm crowdfunding and agricultural investment landing page",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

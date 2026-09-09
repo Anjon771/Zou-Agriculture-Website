@@ -1,11 +1,18 @@
-<div align="center">
+# Zou – Farm Landing Page
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+### Demo
+* [Codepen](https://codepen.io/mustafadalga/pen/KKgYJxP) 
+* [Github Pages](https://mustafadalga.github.io/farm-landing-page/)
 
-  <h1>Built with AI Studio</h2>
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### Used technologies
+ * HTML5  
+ * SCSS - CSS3
+ * Pure JavaScript
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+#### Resource Sketch Design
+ * https://uigarage.net/ui-kit/zou-farm-landing-page/
+ 
+ #### ScreenCapture
+ ![screencapture](https://user-images.githubusercontent.com/25087769/105427205-af700480-5c5d-11eb-80f9-b779df7f43ff.png)
 
-</div>
